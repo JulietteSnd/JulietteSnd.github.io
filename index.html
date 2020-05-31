@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+				
+			<title> Juliette Sandeau </title>
+			<link rel="stylesheet" type="text/css" href="style/reset.css">
+			<link rel="stylesheet" type="text/css" href="style/style.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_black/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_blackitalic/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_bold/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_bolditalic/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_italic/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_light/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_lightitalic/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_medium/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_mediumitalic/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_regular/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_thin/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="fonts/roboto_thinitalic/stylesheet.css">
+
+
+	</head>
+	
+	<body>
+		
+	
+				
+			<nav>
+				<ul>
+					<a href="#part1" class="js-scrollTo"><li>ABOUT</li></a>
+					<a href="#part2" class="js-scrollTo"><li>PROJETS</li></a>
+					<a href="#part3" class="js-scrollTo"><li>CONTACT</li></a>
+				</ul>
+			</nav>
+
+
+
+
+		<section id="part1">
+
+		<div id="rectangle1"></div>
+		<div id="rectangle2"></div>
+		<div id="rectangle3clair"></div>
+				
+				<p id="accueil"> <img src="image/profil.gif" alt="Ceci est une image animée de Juliette Sandeau" id="gif">  
+					<div id="texte"> <span id="salut"> Salut. Je m'appelle Juliette Sandeau. </span> <br/> <span id='situation'> Je suis actuellement étudiante en DNMADE, option <strong> Graphisme </strong> <br/> spécialisée dans l'<em>« objet éditorial », </em> au lycée Eugénie Cotton à Montreuil (93). </span>
+					</div> 
+				</p>
+
+		</section>
+
+
+
+		<section id="part2">
+
+			<div id="rectangle4"></div>
+			<div id="rectangle5"></div>
+		
+			
+
+			<a href="les_absents.html">
+				<div id="absents_survol"> 
+					<p> 
+						<span class="titre"> Les absents </span>
+						<br> <span class="type"> - micro-édition - </span>
+						<br> <span class="date"> décembre 2019 - janvier 2020 </span>
+					</p>
+				</div>
+			</a>
+			
+			<p> <img src="image/LES_ABSENTS/les_absents1.jpg" alt="Ceci est une mise en scène de la micro-édition" id="absents"> </p> 
+
+
+			<a href="femmes_d'exception.html">
+				<div id="femmes_survol"> 
+					<p> 
+						<span class="titre"> Femmes d'exception </span>
+						<br> <span class="type"> - principes de couvertures - </span>
+						<br> <span class="date"> janvier 2020 - février 2020 </span>
+					</p>
+				</div>
+			</a>
+			
+			<p> <img src="image/FEMMES/femmes.jpg" alt="Ceci est une mise en scène de la collection de livres Femmes d'exception" id="femmes"> </p>
+
+
+			<a href="oulipo.html">
+				<div id="oulipo_survol"> 
+					<p> 
+						<span class="titre"> Oulipo, <br> la littérature en jeu(x) </span>
+						<br> <span class="type"> - carton d'invitation - </span>
+						<br> <span class="date"> octobre 2019 - novembre 2019 </span>
+					</p>
+				</div>
+			</a>
+			
+			<p> <img src="image/OULIPO/oulipo.jpg" alt="Ceci est une image d'un carton d'invitation" id="oulipo"> </p>
+
+
+			<a href="la_maison_des_maths.html">
+				<div id="maths_survol"> 
+					<p> 
+						<span class="titre"> La Maison <br> des Mathématiques </span>
+						<br> <span class="type"> - couverture d'un cahier d'exercice - </span>
+						<br> <span class="date"> septembre - octobre 2019 </span>
+					</p>
+				</div>
+			</a>
+			
+			<p> <img src="image/MATHS/maths.jpg" alt="Ceci est une image de deux couvertures de cahier d'exercice de mathématiques" id="maths"> </p>
+
+		</section>
+
+
+		<section id="part3">
+			
+			<a href="CV_juliettesandeau.pdf" target="_blank" id="CV"> Télécharger le CV</a>
+			<a href="mailto:juliette.sandeau@gmail.com" id="mail"> juliette.sandeau@gmail.com </a>
+			<p id="tel"> 06.86.69.59.26 </p>
+
+			<div id="rectangle6"></div>
+			<div id="rectangle7"></div>
+
+		</section>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+		});
+	</script>
+
+
+	</body>
+
+</html>
